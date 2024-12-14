@@ -1,0 +1,29 @@
+
+#versus {
+    height: 40px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+#corpo {
+    display: flex;
+    align-items: center;
+}
+
+.formula {
+    width: 200px;
+    height: 600px;
+    border: solid;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+input {
+    margin: 5px;
+}
+
+#buttonStart {
+    display: flex;
+    width: 1000px;
+    height: 40px;
+}

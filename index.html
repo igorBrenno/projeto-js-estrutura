@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title> </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1 id="versus"> Versus </h1>
+    <main id="corpo">
+      <form id="red" class="formula">
+        <div>Time 1</div>
+        <input type="text" placeholder="Tamanho" id="tamanhov">
+        <input type="text" placeholder="Quantidade Bolas" id="quantidadeBV">
+        <input type="text" placeholder="Velocidade bolas" id="velocidadeBV">
+        <input type="button" value="VAI" onclick="buttonvermelhovai()">
+        <div id="placartimevermelho"></div>
+      </form>
+      <div id="canvas">
+        <canvas></canvas>
+        <input type="button" value="start" id="buttonStart" onclick="start()">
+      </div>
+      <form id="blue" class="formula">
+          <div>Time 2</div>
+          <input type="text" placeholder="Tamanho" id="tamanhob">
+          <input type="text" placeholder="Quantidade Bolas" id="quantidadeBB">
+          <input type="text" placeholder="Velocidade bolas" id="velocidadeBB">
+          <input type="button" value="VAI" onclick="buttonazulvai()">
+          <div id="placartimeazul"></div>
+        </form>
+    </main>
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>
