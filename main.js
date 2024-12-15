@@ -101,6 +101,8 @@ let tamanhob = 100;
 let quantBV = 1;
 let quantBB = 1;
 const balls = [];
+let velv;
+let velb;
 
 // Função para quando clicar no botão, pegar os valores dos inputs e alterar os campos dos times vermelhos
 function buttonvermelhovai() {
@@ -110,8 +112,6 @@ function buttonvermelhovai() {
   team_red.y = height / 2 - tamanhov / 2;
   team_red.h = tamanhov;
   team_red.balls_count = quantBV;
-  ball_red.velX = velv;
-  ball_red.velY = velv;
 }
 
 let contadorv = 0
@@ -127,8 +127,6 @@ function buttonazulvai() {
   team_blue.y = height / 2 - tamanhob / 2;
   team_blue.h = tamanhob;
   team_blue.balls_count = quantBB;
-  ball_blue.velX = velb;
-  ball_blue.velY = velb;
 }
 
 // Instanciando os times no padrão
@@ -144,8 +142,8 @@ function start() {
     const ball_red = new Ball(
       random(0 + size, width - size),
       random(0 + size, height - size),
-      random(1, 20),
-      random(-7, 7),
+      random(1, velv),
+      random(-7, velv),
       "red",
       size
     );
@@ -157,8 +155,8 @@ function start() {
     const ball_blue = new Ball(
       random(0 + size, width - size),
       random(0 + size, height - size),
-      random(1, 20),
-      random(-7, 7),
+      random(1, velb),
+      random(-7, velb),
       "blue",
       size
     );
