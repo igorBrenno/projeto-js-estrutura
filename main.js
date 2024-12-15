@@ -106,9 +106,12 @@ const balls = [];
 function buttonvermelhovai() {
   tamanhov = document.querySelector("#tamanhov").value;
   quantBV = document.querySelector("#quantidadeBV").value;
+  velv = document.querySelector("#velocidadeBV").value;
   team_red.y = height / 2 - tamanhov / 2;
   team_red.h = tamanhov;
   team_red.balls_count = quantBV;
+  ball_red.velX = velv;
+  ball_red.velY = velv;
 }
 
 let contadorv = 0
@@ -120,9 +123,12 @@ let placarb = document.querySelector("#placartimeazul");
 function buttonazulvai() {
   tamanhob = document.querySelector("#tamanhob").value;
   quantBB = document.querySelector("#quantidadeBB").value;
+  velb = document.querySelector("#velocidadeBB").value;
   team_blue.y = height / 2 - tamanhob / 2;
   team_blue.h = tamanhob;
   team_blue.balls_count = quantBB;
+  ball_blue.velX = velb;
+  ball_blue.velY = velb;
 }
 
 // Instanciando os times no padrão
