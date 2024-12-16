@@ -9,7 +9,8 @@ const height = (canvas.height = 600);
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
+let placarRed = 0;
+let placarBlue = 0;
 // Classe com o contrutor para bolas
 class Ball {
   constructor(x, y, velX, velY, color, size) {
@@ -60,8 +61,8 @@ class Ball {
       this.y < goal1.y + goal1.h &&
       this.color !== goal1.color
     ) {
-      contadorv += 1;
-      placarv.innerHTML = `<h1>${contadorv}</h1>`
+      placarBlue++
+      placarb.innerHTML = `<h1>${placarBlue}</h1>`
     }
     
     if (
@@ -70,12 +71,11 @@ class Ball {
       this.y < goal2.y + goal2.h &&
       this.color !== goal2.color
     ) {
-      contadorb += 1;
-      placarv.innerHTML = `<h1>${contadorb}</h1>`
+      placarRed++
+      placarv.innerHTML = `<h1>${placarRed}</h1>`
     }
   }
 }
-
 // Classe para os times
 class Team {
   constructor(x, y, w, h, color, balls_count) {
